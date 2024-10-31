@@ -727,7 +727,7 @@ export default class LocalCollection {
       for (const id of specificIds) {
         const doc = this._docs.get(id);
 
-        if (doc && ! (await fn(doc, id))) {
+        if (doc && (await fn(doc, id) === false)) {
           break
         }
       }
@@ -742,7 +742,7 @@ export default class LocalCollection {
       for (const id of specificIds) {
         const doc = this._docs.get(id);
 
-        if (doc && !fn(doc, id)) {
+        if (doc && (fn(doc, id) === false)) {
           break
         }
       }
