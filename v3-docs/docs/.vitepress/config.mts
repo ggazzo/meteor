@@ -347,6 +347,10 @@ export default defineConfig({
             link: "/packages/random",
           },
           {
+            text: "react-meteor-data",
+            link: "/packages/react-meteor-data",
+          },
+          {
             text: "server-render",
             link: "/packages/server-render",
           },
@@ -378,6 +382,12 @@ export default defineConfig({
         collapsed: true,
       },
       {
+        text: "Community Packages",
+        link: "/community-packages/index",
+        items: [],
+        collapsed: true,
+      },
+      {
         text: "Troubleshooting",
         items: [
           {
@@ -385,10 +395,6 @@ export default defineConfig({
             link: "/troubleshooting/expired-certificate",
           },
           { text: "Windows", link: "/troubleshooting/windows" },
-          {
-            text: "Known issues in 2.13",
-            link: "/troubleshooting/known-issues",
-          },
         ],
         collapsed: true,
       },
